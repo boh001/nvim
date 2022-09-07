@@ -91,6 +91,7 @@ inoremap ` ``<Esc>ha
 
 inoremap <expr> ) getline('.')[getpos('.')[2] - 1] == ')' ? '<Right>' : ')'
 inoremap <expr> } getline('.')[getpos('.')[2] - 1] == '}' ? '<Right>' : '}'
+inoremap <expr> ] getline('.')[getpos('.')[2] - 1] == ']' ? '<Right>' : ']'
 
 " gruvbox
 let g:gruvbox_contrast_dark = "hard"
