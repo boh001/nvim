@@ -14,26 +14,28 @@ set ruler
 set fileencodings=utf8,euc-kr
 
 call plug#begin('~/.config/nvim/plugged')
-" NERDTree
 Plug 'preservim/nerdtree'
-" language
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" git
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-surround'
 Plug '907th/vim-auto-save'
-" airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" colors-scheme
 Plug 'morhetz/gruvbox'
-" filetype icon
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 call plug#end()
 
 " coc.nvim
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gt <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :
       \ CheckBackspace() ? "\<Tab>" :
@@ -57,6 +59,7 @@ endif
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 :
+
 " Nerdtree
 let NERDTreeShowHidden=1
 
@@ -71,16 +74,17 @@ let g:airline#extensions#tabline#buffer_nr_format = '%s:' " buffer number format
 let g:airline_section_warning= '' "
 
 " NERDTree
-noremap <C-p> :NERDTreeToggle<CR>
+noremap <C-b> :NERDTreeToggle<CR>
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gt <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+" fzf
+nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <C-f> :Lines<CR>
+nnoremap <silent> <C-S-f> :Rg<CR>
+
 
 " keymap
 inoremap { {}<Esc>ha
@@ -98,4 +102,3 @@ inoremap <expr> ` getline('.')[getpos('.')[2] - 1] == '`' ? '<Right>' : '``<Esc>
 let g:gruvbox_contrast_dark = "hard"
 colorscheme gruvbox
 set bg=dark
-highlight Normal ctermfg=white
