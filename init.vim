@@ -28,6 +28,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 " coc.nvim
