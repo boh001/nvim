@@ -1,6 +1,7 @@
 syntax on
 
 " default
+let mapleader=","
 set belloff=all
 set hlsearch
 set autoindent
@@ -27,11 +28,20 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-rooter'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 call plug#end()
 
 " coc.nvim
+let g:coc_global_extensions = ['coc-tsserver','coc-prettier', 'coc-eslint', 'coc-clangd']
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+nmap <leader>f :Prettier<CR>
+
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gt <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -84,7 +94,7 @@ noremap <C-l> <C-w>l
 " fzf
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <C-f> :Lines<CR>
-nnoremap <silent> <C-S-f> :Rg<CR>
+nnoremap <silent> <C-r> :Rg<CR>
 
 
 " keymap
@@ -103,3 +113,4 @@ inoremap <expr> ` getline('.')[getpos('.')[2] - 1] == '`' ? '<Right>' : '``<Esc>
 let g:gruvbox_contrast_dark = "hard"
 colorscheme gruvbox
 set bg=dark
+
