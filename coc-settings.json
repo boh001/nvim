@@ -16,5 +16,5 @@
 		 "javascript",
 		 "typescript"
 	 ],
-	 "tsserver.enableJavascript": false,
+	 "tsserver.enableJavascript": false
 }
