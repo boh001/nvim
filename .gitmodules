@@ -1,0 +1,63 @@
+[submodule "plugged/emmet-vim"]
+	path = plugged/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "plugged/nerdtree"]
+	path = plugged/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "plugged/coc.nvim"]
+	path = plugged/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "plugged/vim-fugitive"]
+	path = plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "plugged/nerdtree-git-plugin"]
+	path = plugged/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "plugged/nvim-blame-line"]
+	path = plugged/nvim-blame-line
+	url = https://github.com/tveskag/nvim-blame-line.git
+[submodule "plugged/vim-surround"]
+	path = plugged/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "plugged/vim-auto-save"]
+	path = plugged/vim-auto-save
+	url = https://github.com/907th/vim-auto-save.git
+[submodule "plugged/vim-airline"]
+	path = plugged/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "plugged/vim-airline-themes"]
+	path = plugged/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "plugged/ondark.vim"]
+	path = plugged/ondark.vim
+	url = https://github.com/joshdick/ondark.vim.git
+[submodule "plugged/vim-devicons"]
+	path = plugged/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "plugged/vim-nerdtree-syntax-highlight"]
+	path = plugged/vim-nerdtree-syntax-highlight
+	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
+[submodule "plugged/fzf"]
+	path = plugged/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "plugged/fzf.vim"]
+	path = plugged/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "plugged/vim-multiple-cursors"]
+	path = plugged/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "plugged/vim-javascript"]
+	path = plugged/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "plugged/typescript-vim"]
+	path = plugged/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "plugged/vim-jsx-typescript"]
+	path = plugged/vim-jsx-typescript
+	url = https://github.com/peitalin/vim-jsx-typescript.git
+[submodule "plugged/vim-styled-components"]
+	path = plugged/vim-styled-components
+	url = https://github.com/styled-components/vim-styled-components.git
+[submodule "plugged/markdown-preview.nvim"]
+	path = plugged/markdown-preview.nvim
+	url = https://github.com/iamcco/markdown-preview.nvim.git
