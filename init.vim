@@ -1,4 +1,6 @@
-syntax on
+if has("syntax")
+	syntax on
+endif
 
 " default
 let mapleader=","
