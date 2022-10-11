@@ -12,9 +12,5 @@
    "codeLens.enable": true,
    "suggest.preferCompleteThanJumpPlaceholder": true,
 	 "typescript.preferences.importModuleSpecifier": "non-relative",
-	 "workspace.bottomUpFiletypes": [
-		 "javascript",
-		 "typescript"
-	 ],
 	 "tsserver.enableJavascript": true
 }

@@ -124,6 +124,7 @@ let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*" --glob
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <C-f> :BLines<CR>
 nnoremap <silent> <C-r> :Rg<CR>
+nnoremap <silent> <C-t> :Buffers<CR>
 
 "multiple-cursor
 " Default mapping
@@ -140,7 +141,7 @@ let g:multi_cursor_quit_key            = '<Esc>'
 let g:user_emmet_leader_key='<leader>'
 
 "nvim-blame-line
-autocmd BufEnter * EnableBlameLine
+nnoremap <silent> <leader>b :ToggleBlameLine<CR>
 
 "markdown
 nmap <C-s> <Plug>MarkdownPreview
