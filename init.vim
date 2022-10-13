@@ -36,7 +36,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'mattn/emmet-vim'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 call plug#end()
 
@@ -53,7 +52,7 @@ set updatetime=300
 " diagnostics appear/become resolved.
 set signcolumn=yes
 
-let g:coc_global_extensions = ['coc-tsserver','coc-prettier', 'coc-eslint', 'coc-css', 'coc-clangd']
+let g:coc_global_extensions = ['coc-tsserver','coc-prettier', 'coc-eslint', 'coc-css', 'coc-styled-components', 'coc-clangd']
 
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
