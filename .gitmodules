@@ -4,6 +4,9 @@
 [submodule "plugged/nerdtree"]
 	path = plugged/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule "plugged/vim-markdown"]
+	path = plugged/vim-markdown
+	url = https://github.com/preservim/vim-markdown.git
 [submodule "plugged/coc.nvim"]
 	path = plugged/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git

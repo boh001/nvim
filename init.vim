@@ -36,6 +36,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'mattn/emmet-vim'
+Plug 'preservim/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 call plug#end()
 
@@ -116,6 +117,7 @@ let g:airline_theme='onedark'
 
 " NERDTree
 noremap <C-b> :NERDTreeToggle<CR>
+noremap <C-n> :NERDTreeFind<CR>
 
 " fzf
 let $FZF_DEFAULT_OPTS = '--layout=reverse --inline-info'
@@ -167,3 +169,5 @@ noremap <C-w>s <C-w>s
 " onedark
 colorscheme onedark
 
+"vim markdown
+let g:vim_markdown_folding_disabled = 1

@@ -12,5 +12,11 @@
    "codeLens.enable": true,
    "suggest.preferCompleteThanJumpPlaceholder": true,
 	 "typescript.preferences.importModuleSpecifier": "non-relative",
-	 "tsserver.enableJavascript": true
+	 "tsserver.enableJavascript": true,
+	 "typescript.implementationsCodeLens.enable": false,
+	 "typescript.referencesCodeLens.enabled": false,
+	 "javascript.implementationsCodeLens.enable": false,
+	 "javascript.referencesCodeLens.enabled": false,
+	 "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+	 "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true
 }
