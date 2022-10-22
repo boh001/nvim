@@ -16,6 +16,9 @@ set showmatch
 set ruler
 set fileencodings=utf8,euc-kr
 
+" =================================================
+" Plugins
+" =================================================
 call plug#begin('~/.config/nvim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -40,7 +43,10 @@ Plug 'preservim/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 call plug#end()
 
+" =================================================
 " coc.nvim
+" =================================================
+
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
