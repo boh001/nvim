@@ -4,9 +4,6 @@
 [submodule "plugged/nerdtree"]
 	path = plugged/nerdtree
 	url = https://github.com/preservim/nerdtree.git
-[submodule "plugged/vim-markdown"]
-	path = plugged/vim-markdown
-	url = https://github.com/preservim/vim-markdown.git
 [submodule "plugged/coc.nvim"]
 	path = plugged/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
@@ -49,18 +46,3 @@
 [submodule "plugged/vim-multiple-cursors"]
 	path = plugged/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
-[submodule "plugged/vim-javascript"]
-	path = plugged/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
-[submodule "plugged/typescript-vim"]
-	path = plugged/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
-[submodule "plugged/vim-jsx-typescript"]
-	path = plugged/vim-jsx-typescript
-	url = https://github.com/peitalin/vim-jsx-typescript.git
-[submodule "plugged/vim-styled-components"]
-	path = plugged/vim-styled-components
-	url = https://github.com/styled-components/vim-styled-components.git
-[submodule "plugged/markdown-preview.nvim"]
-	path = plugged/markdown-preview.nvim
-	url = https://github.com/iamcco/markdown-preview.nvim.git

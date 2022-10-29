@@ -1,6 +1,6 @@
 {
   "clangd.semanticHighlighting": true,
-  "clangd.path":"/opt/homebrew/opt/llvm/bin/clangd",
+  "clangd.path":"~/.config/coc/extensions/coc-clangd-data/install/15.0.3/clangd_15.0.3/bin/clangd",
    "coc.preferences.currentFunctionSymbolAutoUpdate": true,
 	 "diagnostic.checkCurrentLine": "true",
    "diagnostic.errorSign": "✖",

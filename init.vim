@@ -5,7 +5,7 @@ endif
 " default
 let mapleader=","
 set mouse=a
-set belloff=all
+set belloff=all 
 set hlsearch
 set autoindent
 set cindent
@@ -35,12 +35,6 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-Plug 'mattn/emmet-vim'
-Plug 'preservim/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 call plug#end()
 
 " =================================================
@@ -59,12 +53,7 @@ set updatetime=300
 " diagnostics appear/become resolved.
 set signcolumn=yes
 
-let g:coc_global_extensions = ['coc-tsserver','coc-prettier', 'coc-eslint', 'coc-css', 'coc-styled-components', 'coc-clangd']
-
-autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
-command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
-nmap <leader>f :Prettier<CR>
+let g:coc_global_extensions = ['coc-clangd']
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gt <Plug>(coc-type-definition)
@@ -96,7 +85,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 :
 
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call ShowDocumentation()<CR>
+nnoremap <leader>s :call ShowDocumentation()<CR>
 
 function! ShowDocumentation()
   if CocAction('hasProvider', 'hover')
@@ -144,14 +133,8 @@ let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
-"emmet
-let g:user_emmet_leader_key='<leader>'
-
 "nvim-blame-line
 nnoremap <silent> <leader>b :ToggleBlameLine<CR>
-
-"markdown
-nmap <C-s> <Plug>MarkdownPreview
 
 " keymap
 inoremap { {}<Esc>ha
@@ -174,6 +157,3 @@ noremap <C-w>s <C-w>s
 
 " onedark
 colorscheme onedark
-
-"vim markdown
-let g:vim_markdown_folding_disabled = 1
