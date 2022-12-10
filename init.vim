@@ -53,7 +53,7 @@ set updatetime=300
 " diagnostics appear/become resolved.
 set signcolumn=yes
 
-let g:coc_global_extensions = ['coc-clangd']
+let g:coc_global_extensions = ['coc-clangd', 'coc-rust-analyzer']
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gt <Plug>(coc-type-definition)
